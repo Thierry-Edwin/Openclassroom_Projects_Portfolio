@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/general.css" rel="stylesheet">
+    <link href="../style/grid.css" rel="stylesheet">
+    <link href="../style/header.css" rel="stylesheet">
+    <link href="../style/modal.css" rel="stylesheet">
+    <script type="module" src="../scripts/apiFecther.js" ></script>
+    <script type="module" src="../scripts/htmlBuilder.js" ></script>
+    <title>JustStreamIt</title>
+</head>
+<body>
+<header>
+    <div class="header-title">
+        <img src="images/logo.png" class="header-title__logo" alt="logo">
+        <h1 class="">Find Your Movie</h1>
+        <nav class="search-bar">
+            <div class="genre-select">
+                <label for="genre-select">Chose a genre: </label>
+                <select id="genre-select"></select>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <h2 class="best-film--title">Best Movies Ever</h2>
+    <div class="best-film">
+        <img class="best-film__img" src="default" alt="affiche du film">
+        <div class="film-info">
+            <h3 class="film-info__h3">default</h3>
+            <p id="film-description"></p>
+        </div>
+    </div>
+    <section>
+        <h2>The most popular movies</h2>
+        <div class="grid grid-apreciate-film"> </div>
+        <button class="btn see-more-btn">See More</button>
+    </section>
+    <section>
+        <h2>Action</h2>
+        <div class="grid grid-apreciate-film__category"></div>
+        <button class="btn see-more-btn">See More</button>
+    </section>
+    <section>
+        <h2>Comedy</h2>
+        <div class="grid grid-apreciate-film__category2"></div>
+        <button class="btn see-more-btn">See More</button>
+    </section>
+    <section >
+        <h2>Your favorite genre :</h2>
+        <h2 id="genre-selector">Choose in navigation bar</h2>
+        <div class="grid grid-choice-category"></div>
+        <button class="btn see-more-btn">See More</button>
+    </section>
+
+    <div class="modal-container">
+        <div class="overlay-modal modal-trigger"></div>
+        <div class="modal modal-grid">
+            <h2 class="modal-title">default</h2>
+            <img class="modal-img" src="default" alt="affiche du film">
+            <h4 class="modal-year">default</h4>
+            <h4 class="modal-genres">default</h4>
+            <h4 class="modal-rated">default</h4>
+            <h4 class="modal-duration">default</h4>
+            <h4 class="modal-score">default</h4>
+            <h5 class="modal-country">default</h5>
+            <p class="modal-directors"></p>
+            <p class="modal-long-description"></p>
+            <p class="modal-actors"></p>
+            <button aria-label="close modal" class="close-modal modal-trigger">X</button>
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
