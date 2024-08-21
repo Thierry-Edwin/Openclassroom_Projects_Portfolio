@@ -104,7 +104,7 @@ Mon objectif principal est de rejoindre une équipe dynamique dans le secteur de
 ## 🗂️ Structure des Répertoires
 
 - `{date/nom du projet}/` : Contient le code source des projets, avec un guide d'installation détaillé.
-- `{date/nom du projet}/{documents}` : Contient les présentations et évaluations des jury lors de mes passages oralaux.
+- `{date/nom du projet}/{documents}` : Contient les présentations et évaluations des jury lors de mes passages oraux.
 
 
 ## 💬 Contact
