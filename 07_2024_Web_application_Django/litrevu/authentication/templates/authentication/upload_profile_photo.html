@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="form-ticket-container">
+    <div class="form-ticket-box">
+        <form class="form-ticket" id="profilePhotoForm" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <div class="form-cropper">
+                <img id="imagePreview" style="display:none; max-width:100%;">
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="error" style="color: red;"></div>
+    </div>
+</div>
+    
+{% endblock content %}

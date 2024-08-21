@@ -1,0 +1,86 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load blog_extras %}
+{% block content %}
+<main class="main-content">
+    <div class="feed page-transition page-transition-active">
+        <div class="feed-nav">
+            <h3 class="fancy-link nav-feed-link" data-content="all-posts" tabindex="2">Tous les posts</h3>
+            <h3 class="fancy-link nav-feed-link" data-content="follows-posts" tabindex="2">Posts des amis</h3>
+        </div>
+        <div id="all-posts" class="feed">
+            {% include 'blog/ticket_list.html' with tickets_with_reviews=tickets_with_reviews star_range=star_range %}
+            <div class="pagination">
+                <div class="previous-page profile-link">
+                    {% if ticket_page_obj.has_previous %}
+                        <a href="?page={{ ticket_page_obj.previous_page_number }}">précédente</a>
+                    {% endif %}
+                </div>
+                <div class="next-page">
+                    {% if ticket_page_obj.has_next %}
+                        <a class="next-page profile-link" href="?page={{ ticket_page_obj.next_page_number }}">suivante</a>
+                    {% endif %}
+                </div>
+                <div class="current-page">
+                    Page {{ ticket_page_obj.number }} sur {{ ticket_page_obj.paginator.num_pages }}.
+                </div>
+            </div>
+        </div>
+        <div id="follows-posts" class="feed">
+            {% include 'blog/ticket_list.html' with tickets_with_reviews=follows_tickets_with_reviews star_range=star_range %}
+            <div class="pagination">
+                <div class="previous-page profile-link">
+                    {% if follows_ticket_page_obj.has_previous %}
+                        <a href="?follows_page={{ follows_ticket_page_obj.previous_page_number }}">précédente</a>
+                    {% endif %}
+                </div>
+                <div class="next-page">
+                    {% if follows_ticket_page_obj.has_next %}
+                        <a class="next-page profile-link" href="?follows_page={{ follows_ticket_page_obj.next_page_number }}">suivante</a>
+                    {% endif %}
+                </div>
+                <div class="current-page">
+                    Page {{ follows_ticket_page_obj.number }} sur {{ follows_ticket_page_obj.paginator.num_pages }}.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="side-left">
+        <div class="user-container">
+            <div class="side-sticky-left">
+                <div class="scrollable-content">
+                    <h3>Vos amis</h3>
+                    <div class="all-user">
+                        {% for user in following %}
+                        <a class="profile-link" href="{% url 'user_profile' username=user.username %}" tabindex="2">{{ user.username|capitalize_first }}</a>
+                        <img class="ticket-avatar" src="{{ user|profile_photo_or_default }}">
+                        {% endfor %}
+                    </div>
+                    <h3>Les Utilisateurs</h3>
+                    <div class="all-user">
+                        {% for user in users %}
+                        
+                        <a class="profile-link" href="{% url 'user_profile' username=user.username %}" tabindex="2">{{ user.username|capitalize_first }}</a>
+                        <img class="ticket-avatar" src="{{ user|profile_photo_or_default }}">
+                        {%  endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side-right">
+        <div class="side-sticky-right">
+            <h2 class="side-title">Pour participer à la communauté !</h2>
+            <a class="button-review" href="{% url 'ticket_upload' %}" tabindex="3">Demander une critique</a>
+            <a class="button-review" href="{% url 'create_ticket_review' %}" tabindex="3">Créer une critique</a>
+        </div>  
+    </div>
+</main>
+
+
+   
+    
+{% endblock content %}

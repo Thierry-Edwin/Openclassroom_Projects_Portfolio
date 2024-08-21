@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="form-ticket-container">
+    <div class="form-ticket-box">
+        <h1>Créer une Critique</h1>
+        <form class="form-ticket" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.title.label_tag }} {{ form.title }}
+            <button type="button" id="search-books">Rechercher le livre</button>
+            <div>
+                <select id="book-select" style="display: none;"></select>
+            </div>
+            {{ form.author.label_tag }} {{ form.author }}
+            <input type="hidden" id="id_image_url" name="image_url">
+            <br>
+            {{ form.description.label_tag }} {{ form.description }}
+            <hr>
+            {{ form.review_rating.label_tag }} {{ form.review_rating }}
+            {{ form.review_headline.label_tag }} {{ form.review_headline }}
+            {{ form.review_body.label_tag }} {{ form.review_body }}
+            <img id="image-preview" src="#" alt="Image Preview" style="display: none;"/>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,93 @@
+
+
+/* Style géneraux pour les tickets */
+
+.ticket{
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #D4A373;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.ticket-header{
+    display: grid;
+    grid-template-columns: 1.1fr 2fr 1fr;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.ticket-user-info{
+    display:flex;
+    align-items: center;
+    grid-column: 1;
+}
+
+.ticket-avatar{
+    width: 90px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.ticket-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.ticket-header__user{
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.ticket-type{
+    margin: 5px;
+    color: gray;
+    text-align: center;
+}
+
+.ticket-header__title{
+    text-align: center;
+}
+
+.ticket-dropdown{
+    grid-column: 3;
+    justify-self: right;
+    align-self: center;
+}
+
+.ticket-content{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-rows: auto;
+}
+
+.ticket-content__desc{
+    font-size: 1em;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.ticket-content__img{
+    grid-column: 2;
+    grid-row: 1 / 3;
+    justify-self: right;
+    padding-right: 30px;
+    height: 200px;
+    width: auto;
+}
+
+.ticket-content__time{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    align-self: center;
+}
+

@@ -1,0 +1,90 @@
+/* Style généraux pour les reviews */
+
+.review-container{
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    padding-bottom: 0;
+    border: 2px solid #D4A373;
+    background: #f6f5f7;
+    border-radius: 15px;
+}
+
+.review-container h3{
+    text-align: center;
+}
+
+.review-container h4{
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.review-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #D4A373;
+}
+
+.review-user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review-user-info a{
+    margin-right: 5px;
+    font-size: 1.2em;
+    
+}
+
+.review-rating{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.review-rating h5{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.review-body{
+    text-align: left;
+}
+
+.review{
+    position: relative;
+}
+
+.review-menu{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.star {
+    color: gray;
+    font-size: 1.5em;
+    margin-right: 2px;
+}
+
+.star-filled {
+    color: gold;
+}
+
+#id_rating{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.drop-review{
+    padding: 15px;
+}
