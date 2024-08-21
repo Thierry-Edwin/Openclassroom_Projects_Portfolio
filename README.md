@@ -1,6 +1,6 @@
 # 🎓 Portfolio Développeur Logiciel - Python/Django
 
-Bienvenue sur mon portfolio GitHub ! Ce dépôt regroupe tous les projets que j'ai réalisés dans le cadre de ma formation de développeur logiciel spécialisé en Python et Django. Vous y trouverez des exemples concrets de mon travail, illustrant mes compétences techniques et ma capacité à résoudre des problèmes complexes.
+Bienvenue sur mon portfolio GitHub ! Ce dépôt regroupe tous les projets que j'ai réalisés dans le cadre de ma formation de développeur logiciel spécialisé en Python et Django avec la structure OpenClassroom. Vous y trouverez des exemples concrets de mon travail, illustrant mes compétences techniques et ma capacité à résoudre des problèmes complexes.
 
 
 ## 📑 Table des Matières
