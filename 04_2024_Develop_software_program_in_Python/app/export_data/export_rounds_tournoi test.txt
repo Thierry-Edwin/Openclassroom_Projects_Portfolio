@@ -1,0 +1,44 @@
+Round Index: 1
+Start Date: 22-04-2024
+End Date: 22-04-2024
+Game List:
+    Game ID: 1
+        Player: thierry, National ID: AA12345, Score: 1
+        Player: alex, National ID: AB12345, Score: 0
+    Game ID: 2
+        Player: edwin, National ID: AR34563, Score: 0.5
+        Player: bryan, National ID: BB12345, Score: 0.5
+
+Round Index: 2
+Start Date: 22-04-2024
+End Date: 22-04-2024
+Game List:
+    Game ID: 1
+        Player: thierry, National ID: AA12345, Score: 1
+        Player: edwin, National ID: AR34563, Score: 0
+    Game ID: 2
+        Player: bryan, National ID: BB12345, Score: 0.5
+        Player: alex, National ID: AB12345, Score: 0.5
+
+Round Index: 3
+Start Date: 22-04-2024
+End Date: 22-04-2024
+Game List:
+    Game ID: 1
+        Player: thierry, National ID: AA12345, Score: 1
+        Player: bryan, National ID: BB12345, Score: 0
+    Game ID: 2
+        Player: edwin, National ID: AR34563, Score: 1
+        Player: alex, National ID: AB12345, Score: 0
+
+Round Index: 4
+Start Date: 22-04-2024
+End Date: 22-04-2024
+Game List:
+    Game ID: 1
+        Player: thierry, National ID: AA12345, Score: 1
+        Player: edwin, National ID: AR34563, Score: 0
+    Game ID: 2
+        Player: bryan, National ID: BB12345, Score: 1
+        Player: alex, National ID: AB12345, Score: 0
+

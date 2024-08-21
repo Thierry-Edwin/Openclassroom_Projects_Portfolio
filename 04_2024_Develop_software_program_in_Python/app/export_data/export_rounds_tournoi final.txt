@@ -1,0 +1,28 @@
+Round Index: 1
+Start Date: 14-04-2024
+End Date: 14-04-2024
+Game List:
+    Game ID: 1
+        Player: alex, National ID: AB12345, Score: 1
+        Player: limule, National ID: SL12345, Score: 0
+    Game ID: 2
+        Player: jack, National ID: PI12345, Score: 1
+        Player: frank, National ID: RE34567, Score: 0
+    Game ID: 3
+        Player: bryan, National ID: BB12345, Score: 1
+        Player: martin, National ID: RT45869, Score: 0
+
+Round Index: 2
+Start Date: 14-04-2024
+End Date: 14-04-2024
+Game List:
+    Game ID: 1
+        Player: alex, National ID: AB12345, Score: 1
+        Player: jack, National ID: PI12345, Score: 0
+    Game ID: 2
+        Player: bryan, National ID: BB12345, Score: 1
+        Player: limule, National ID: SL12345, Score: 0
+    Game ID: 3
+        Player: frank, National ID: RE34567, Score: 1
+        Player: martin, National ID: RT45869, Score: 0
+
