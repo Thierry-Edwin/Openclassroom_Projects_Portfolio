@@ -1,6 +1,0 @@
-national_id: AB12345, name: alex, score: 0.5
-national_id: BB12345, name: bryan, score: 1.0
-national_id: RE34567, name: frank, score: 2
-national_id: PI12345, name: jack, score: 0.5
-national_id: SL12345, name: limule, score: 1
-national_id: RT45869, name: martin, score: 1.0
