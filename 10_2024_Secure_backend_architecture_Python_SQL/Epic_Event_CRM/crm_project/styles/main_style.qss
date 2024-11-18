@@ -1,0 +1,142 @@
+#login{
+    margin-right:100px;
+    margin-left:100px;
+}
+
+
+#management_buttons{
+    margin: 15px;
+}
+
+
+
+#label_customer_info {
+    padding:10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+#label_titre{
+    padding: 10px;
+    text-decoration: underline;
+}
+
+QLabel {
+    font-size: 14px;
+
+}
+QLineEdit {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+}
+QComboBox {
+    padding: 5px;
+
+
+}
+
+QCheckBox {
+    padding: 5px;
+
+}
+
+QRadioButton {
+    padding:5px;
+}
+
+QDateEdit {
+    padding: 5px;
+}
+
+
+QSlider::handle:horizontal {
+    background: #546A76; /* Couleur du curseur */
+}
+
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+}
+
+QRadioButton::indicator::unchecked {
+    background-color: white;
+    border: 1px solid #555555;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #546A76;
+    border: 1px solid #555555;
+}
+
+QRadioButton {
+    color: #546A76;  
+}
+
+QCalendarWidget QToolButton::hover {
+    background-color: #546A76;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #546A76;
+}
+
+QPushButton {
+    background-color: #546A76;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #88A0A8;
+}
+
+QMessageBox {
+    background-color: #2e2e2e;  /* Fond de la boîte de dialogue */
+    color: #ffffff;  /* Couleur du texte */
+    border: 2px solid #3a3a3a;  /* Bordure de la boîte */
+}
+
+QMessageBox QLabel {
+    color: #ffffff;  /* Couleur du texte du message */
+    font-size: 14px; /* Taille du texte */
+}
+
+QMessageBox QPushButton {
+    background-color: #546A76;  /* Couleur de fond des boutons */
+    color: white;  /* Couleur du texte des boutons */
+    padding: 5px 15px;  /* Marges des boutons */
+    border-radius: 5px;  /* Boutons arrondis */
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #88A0A8;  /* Couleur de fond au survol */
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #88A0A8;  /* Couleur de fond quand le bouton est pressé */
+}
+
+QTableWidget {
+    background-color: #f9f9f9;
+    gridline-color: #cccccc;
+}
+QTableWidget::item {
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+QTableWidget::item:selected {
+    background-color: #a8d8f0;
+    color: #000000;
+}
+QHeaderView::section {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
